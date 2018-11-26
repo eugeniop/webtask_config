@@ -1,0 +1,24 @@
+{
+  "name": "webtask_config",
+  "version": "1.0.0",
+  "description": "A simple utility for Webtask configuration management",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugeniop/webtask_config.git"
+  },
+  "keywords": [
+    "webtask",
+    "config"
+  ],
+  "author": "Eugenio Pace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eugeniop/webtask_config/issues"
+  },
+  "homepage": "https://github.com/eugeniop/webtask_config#readme"
+}
