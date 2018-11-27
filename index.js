@@ -1,6 +1,7 @@
 var request = require('request');
 var _ = require('lodash');
 
+//This is the `load` function meant to be called from consumers of config
 exports.load = function(options, done){
   request.get(options.url,
               {
@@ -31,6 +32,10 @@ exports.load = function(options, done){
               }); 
 };
 
+//This is the server function, meant to be called from the `config` webtask
+/*
+  app.get('/', config.serve)
+*/
 exports.serve = function(req, res){
   var auth = req.get('Authorization');
 

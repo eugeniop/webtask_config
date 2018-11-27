@@ -1,6 +1,6 @@
 {
   "name": "webtask_config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple utility for Webtask configuration management",
   "main": "index.js",
   "dependencies": {

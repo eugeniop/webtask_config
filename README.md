@@ -17,7 +17,22 @@ cfg.load(options, (e,config)=>{
 	});
 ```
 
-### Options
+The serving function is meant to be used to retrieve and return config parameters from Webtask secret storage.
+
+
+```js
+import cfg from 'webtask_config';
+
+const app = express();
+
+app.get('/', cfg.serve);
+
+```
+
+It expects a `CONFIG_API_TOKEN` in the secrets, which is the shared password for anyone using the endpoint.
+
+
+### Options (just for `load`)
 
 The `options` parameter must contain:
 
