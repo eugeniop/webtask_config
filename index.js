@@ -30,3 +30,14 @@ exports.load = function(options, done){
                 }
               }); 
 };
+
+exports.serve = function(req, res){
+  var auth = req.get('Authorization');
+
+  if(!auth || auth !== req.webtaskContext.data['CONFIG_API_TOKEN']){
+    res.statusCode = 403;
+    return res.send("Unauthorized");
+  }
+
+  res.json(req.webtaskContext.data);
+};
